@@ -32,7 +32,7 @@ Variable files (\*.tfvars) must be stored in ./data <br>
 see  ./data/README.md for more information on naming <br>
 
 
-##Cloudformation Template (**(run only once per ACCOUNT**)
+##Cloudformation Template (**run only once per ACCOUNT**)
 ```
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "Creates the S3 bucket for Terraform statefiles"
