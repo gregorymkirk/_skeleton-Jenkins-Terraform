@@ -1,9 +1,10 @@
 ### Skeleton for TFS terraform repos
 
-##Included file:
+##Included files:
 * .gitinore - uses recomended terrform settings
 * .backend.tf  - must be included to allow jenkins to configure the jobs to the S3 shared state
 * Jenkinsfile - This handles all the needed steps to manage the terraform pipeline.
+* ./data/README.md - Explains the naming conventin for variable files
 
 ##Usage notes:
 
