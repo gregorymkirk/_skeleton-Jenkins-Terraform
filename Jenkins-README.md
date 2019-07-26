@@ -8,16 +8,19 @@
 
 ##Usage notes:
 
-The Jenkinsfile **must** be edited.
- Line 10:         SOLUTION = 'CHANGEME'
- Change CHAGNEME to the name of your project repo to ensure uniqueness.  If you not, it is possible you coudl overwrite the statefile of another project.
+The Jenkinsfile **must** be edited.<br>
+```
+Line 10:         SOLUTION = 'CHANGEME'
+```
+ 
+Change CHANGEME to the name of your project repo to ensure uniqueness of the statefiles.  If you not, it is possible you could overwrite the statefile of another project.  This woul be a "very bad thing"(tm)<br>
  *we are debugging code that will fail the build in this case*
+<br>
 
-
-Before running the pipeline you must create an S3 bucket for the storage of the shared state.  
-This bucket must be named  tf-state-*account-alias*
-e.g. : tf-state-tfsawsdne02
-
+Before running the pipeline you must create an S3 bucket for the storage of the shared state.  >br>
+This bucket must be named  tf-state-*account-alias* <br>
+e.g. : tf-state-tfsawsdne02<br>
+<br>
 The  YAML cloudformation template below can be used to  create the  S3 bucket for the account.
 * You may enter the ID of a previously created KMS key if you wish to use KMS manage encryption on this bucket.  I fyou do not enter a KMS key ID it will create the bucket using an AWS managed key.
 * Note you will need to manually enter the account alias. (Cloudformation does not have a psuedo-paramenter for the alias)
