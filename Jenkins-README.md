@@ -17,7 +17,7 @@ Change CHANGEME to the name of your project repo to ensure uniqueness of the sta
  *we are debugging code that will fail the build in this case*
 <br>
 
-Before running the pipeline you must create an S3 bucket for the storage of the shared state.  >br>
+Before running the pipeline you must create an S3 bucket for the storage of the shared state.  <br>
 This bucket must be named  tf-state-*account-alias* <br>
 e.g. : tf-state-tfsawsdne02<br>
 <br>
@@ -27,9 +27,9 @@ The  YAML cloudformation template below can be used to  create the  S3 bucket fo
 
 ##Variable Files
 
-Variable files (\*.tfvars) must be stored in ./data
-
-see  ./data/README.md for more information on naming
+Variable files (\*.tfvars) must be stored in ./data <br>
+<br>
+see  ./data/README.md for more information on naming <br>
 
 
 ##Cloudformation Template (**(run only once per ACCOUNT**)
