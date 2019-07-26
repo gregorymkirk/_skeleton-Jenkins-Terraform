@@ -14,7 +14,6 @@ Line 10:         SOLUTION = 'CHANGEME'
 ```
  
 Change CHANGEME to the name of your project repo to ensure uniqueness of the statefiles.  If you not, it is possible you could overwrite the statefile of another project.  This would be a "very bad thing"(tm)<br>
- *we are debugging code that will fail the build in this case*
 <br>
 
 Before running the pipeline you must create an S3 bucket for the storage of the shared state.  <br>
