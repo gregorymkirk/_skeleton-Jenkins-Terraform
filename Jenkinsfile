@@ -13,10 +13,10 @@ pipeline {
 
     parameters {
         //cusotmize this list with the acceptable AWS account aliases
-        choice ( name: 'ACCOUNTALIAS', choices: ['tfsawsdne01', 'tfsawsdne02', 'tfsawsmgmt','tfsawsiac','tfsawssubprod', 'tfsawsprod'], description: 'Account Alias')
+        choice ( name: 'ACCOUNTALIAS', choices: ['awsaccount1', 'awsaccount2', 'awsaccount3'], description: 'Account Alias')
         choice ( name: 'AWS_REGION', choices:['us-east-1', 'us-west-2'], description: 'AWS Region')
         //customise the list with the client's enviroment choices
-        choice ( name: 'ENVIRONMENT', choices:['prod', 'subprod', 'stage', 'test', 'dev', 'poc'], description: 'Environment to build')
+        choice ( name: 'ENVIRONMENT', choices:['prod', 'subprod', 'stage', 'test', 'dev' ], description: 'Environment to build')
     }
 
 
